@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS3JNarvaez.PageHome"
+             BackgroundColor="#152847">
+    <ContentPage.Content>
+        <StackLayout Padding="10,12">
+            <Label x:Name="lblBienvenido"  TextColor="White" FontSize="20"/>
+            <StackLayout Orientation="Horizontal">
+                <Image VerticalOptions="Center" HorizontalOptions="Center" Source="logo.png"  WidthRequest="300" />
+            </StackLayout>
+            <Label Text="CALIFICACIONES" FontSize="20" TextColor="White" FontFamily="arial" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nota Seguimiento 1: " TextColor="White" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaUno" TextColor="Orange" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Examen 1: " TextColor="White" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaDos" TextColor="Orange"  Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Nota Parcial 1: " TextColor="White" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtResultadoUno" TextColor="Orange" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="Nota Seguimiento 2: " TextColor="White" Grid.Row="3" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaTres" TextColor="Orange" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+                    <Label Text="Examen 2: " TextColor="White" Grid.Row="4" Grid.Column="0"/>
+                    <Entry x:Name="txtNotaCuatro" TextColor="Orange" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+
+                    <Label Text="Nota Parcial 2: " TextColor="White" Grid.Row="5" Grid.Column="0"/>
+                    <Entry x:Name="txtResultadoDos" TextColor="Orange" IsReadOnly="True" Grid.Row="5" Grid.Column="1"/>
+
+                    <Label Text="Nota Final: " TextColor="White" Grid.Row="6" Grid.Column="0"/>
+                    <Entry x:Name="txtResultadoTotal" TextColor="Orange" IsReadOnly="True" Grid.Row="6" Grid.Column="1"/>
+
+                    <Label Text="ESTADO: " TextColor="White" Grid.Row="7" Grid.Column="0"/>
+                    <Entry x:Name="txtEstado" TextColor="Orange" IsReadOnly="True" Grid.Row="7" Grid.Column="1"/>
+                </Grid>
+            </ScrollView>
+            <Button x:Name="btnCalcular" Text="Calcular" VerticalOptions="Center"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderColor="Orange"
+                BorderWidth="1.5"
+                CornerRadius="50" Clicked="btnCalcular_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS3JNarvaez.MainPage"
+             BackgroundColor="#152847">
+    <ContentPage.Content>
+        <StackLayout  Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Aspect="AspectFit" Source="sello.png" WidthRequest="180" HeightRequest="180"></Image>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                BorderColor="Orange"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
