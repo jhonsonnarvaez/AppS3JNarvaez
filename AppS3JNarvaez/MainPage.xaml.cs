@@ -54,7 +54,7 @@ namespace AppS3JNarvaez
         private List<Usuario> obtenerUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();
-            Usuario uno = new Usuario("juan@algo.com", "123456", "Juan", "Narváez");
+            Usuario uno = new Usuario("estudiante2021", "estudiante2021", "Juan", "Narváez");
             Usuario dos = new Usuario("pedro@algo.com", "123456", "Pedro", "Ortiz");
             Usuario tres = new Usuario("luis@algo.com", "123456", "Luis", "Tufiño");
             Usuario cuatro = new Usuario("edison@algo.com", "123456", "Edison", "Espin");
